@@ -215,8 +215,7 @@ module testbench_main(output[5:0] DIG,output[7:0]DISPLAYOUT,output test,output c
 reg clk,key;
 wire[7:0] cnt;
 wire[1:0] out;
-wire change;
-initial begin clk<=0; key<=1; #100000000 key<=0; #200000000 key<=1; #200000000 key<=0; #200000000 key<=1; #200000000 key<=0; #200000000 key<=1 ;#200000000 key<=0;#200000000 key<=1 ;#200000000 key<=0; #200000000 key<=1;#20000000 key<=0; #200000000 key<=1;end
+initial begin clk<=0; key<=1; #100000000 key<=0; #200000000 key<=1; #200000000 key<=0; #200000000 key<=1; #200000000 key<=0; #200000000 key<=1 ;#200000000 key<=0;#200000000 key<=1 ;#200000000 key<=0; #200000000 key<=1;#200000000 key<=0; #200000000 key<=1;end
 always #10 clk=~clk;
 wire clk2,clk3;
 wire[9:0] state;
